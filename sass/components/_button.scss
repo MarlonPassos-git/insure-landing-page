@@ -1,0 +1,56 @@
+.btn {
+    display: inline-block;
+
+    padding: 1.375rem 3rem;
+    background-color: transparent;
+
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+    outline: none;
+
+    &--black {
+        border: 2px solid var(--color-dark-violet);
+        color: var(--color-dark-violet);
+
+        &:hover {
+            background-color: var(--color-dark-violet);
+            color: white;
+        }
+    }
+
+    &--white {
+        border: 2px solid white;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: var(--color-dark-violet);
+        }
+    }
+
+    &--header {
+        @media only screen and (max-width: 799px) {
+            border: 2px solid white;
+            padding: 2rem 8rem;
+            background-color: var(--color-very-dark-violet);
+            color: white;
+            font-size: 2.5rem;
+            font-weight: initial;
+
+            &:hover {
+                background-color: var(--color-very-dark-violet);
+                color: white;
+            }
+
+            &:active {
+                background-color: white;
+                color: var(--color-very-dark-violet);
+            }
+        }
+    }
+}

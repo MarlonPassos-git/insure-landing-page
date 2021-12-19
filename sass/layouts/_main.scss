@@ -1,0 +1,28 @@
+body {
+    overflow-x: hidden;
+}
+
+.disable-scroll {
+    overflow-y: hidden;
+    
+    @media only screen and (min-width: 800px) {
+        overflow-y: initial;
+    }
+}
+
+// ATTRIBUTION
+
+.attribution {
+    position: absolute;
+    z-index: 2;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--color-dark-violet);
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: var(--color-dark-greyish-violet);
+    }
+}
